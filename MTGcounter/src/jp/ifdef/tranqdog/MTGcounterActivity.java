@@ -34,7 +34,6 @@ public class MTGcounterActivity extends Activity {
         	Intent intent = new Intent(MTGcounterActivity.this, MTGserchActivity.class);
     		startActivity(intent);
     		break;
-    		
     	case 1:
     		
     	}
