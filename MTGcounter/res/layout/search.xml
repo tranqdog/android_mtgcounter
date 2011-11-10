@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1" android:orientation="horizontal">
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_marginTop="16dp" android:text="@string/searchtext"></TextView>
+        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/editText1" android:layout_below="@+id/textView1" android:layout_marginTop="22dp" android:layout_alignLeft="@+id/textView1" android:layout_toLeftOf="@+id/imageButton1">
+            <requestFocus></requestFocus>
+        </EditText>
+        <WebView android:id="@+id/webView1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_below="@+id/textView2"></WebView>
+        <ImageButton android:src="@android:drawable/ic_menu_search" android:id="@+id/imageButton1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignBottom="@+id/editText1" android:layout_alignRight="@+id/textView1"></ImageButton>
+        <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textView2" android:layout_height="wrap_content" android:layout_below="@+id/editText1" android:layout_centerHorizontal="true" android:layout_marginTop="51dp" android:text="@string/searchtextname"></TextView>
+    </RelativeLayout>
+    
+</LinearLayout>
